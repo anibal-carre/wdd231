@@ -1,0 +1,65 @@
+@media screen and (min-width: 768px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    .profile-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    #hamburger-btn {
+        display: none;
+    }
+
+    nav {
+        display: block;
+        background-color: var(--dark-accent);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li {
+        flex: 1;
+    }
+
+    main {
+        padding: 2rem;
+    }
+
+    .course-work,
+    .location {
+        display: inline-block;
+        width: calc(50% - 0.75rem);
+        vertical-align: top;
+    }
+
+    .course-work {
+        margin-right: 1.5rem;
+    }
+
+    .certificate {
+        clear: both;
+    }
+
+    .courses-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
+    .filter-buttons {
+        gap: 1rem;
+    }
+
+    .filter-buttons button {
+        padding: 0.5rem 2rem;
+    }
+}

@@ -1,0 +1,214 @@
+:root {
+    --primary-color: #0f4c75;
+    --secondary-color: #3282b8;
+    --accent-color: #bbe1fa;
+    --dark-accent: #1b262c;
+    --completed-color: #7b3f00;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --card-bg: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--text-dark);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#hamburger-btn {
+    position: absolute;
+    right: 1rem;
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+nav {
+    background-color: var(--dark-accent);
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: var(--secondary-color);
+}
+
+nav a.active {
+    background-color: var(--secondary-color);
+}
+
+main {
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+    color: var(--primary-color);
+}
+
+h1 {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+}
+
+section h2 {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.25rem;
+}
+
+.course-work ul {
+    padding: 1rem 2rem;
+    margin: 0;
+}
+
+.location figure {
+    margin: 0;
+    padding: 1rem;
+    text-align: center;
+}
+
+.location img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.location figcaption {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 0.5rem;
+}
+
+.filter-buttons button {
+    background-color: var(--dark-accent);
+    color: var(--text-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: var(--secondary-color);
+}
+
+.filter-buttons button.active {
+    background-color: var(--secondary-color);
+}
+
+.courses-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.course-card {
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    background-color: var(--card-bg);
+    transition: transform 0.2s;
+}
+
+.course-card:hover {
+    transform: translateY(-2px);
+}
+
+.course-card.completed {
+    background-color: var(--completed-color);
+    color: var(--text-light);
+}
+
+.credit-summary {
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
