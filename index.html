@@ -3,7 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="WDD231 Course Home Page" />
+    <meta name="author" content="Anibal David Carreño Alvarez" />
+    <title>WDD231 Course Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course.js" defer></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo" />
+      <span class="name">Anibal David Carreño Alvarez</span>
+      <button id="hamburger-btn" aria-label="Toggle Menu">
+        <span>&#9776;</span>
+      </button>
+    </header>
+
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="chamber.html">Chamber</a></li>
+        <li>
+          <a href="https://github.com/anibal-carre" target="_blank"
+            >GitHub Profile</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/anibal-david-carre%C3%B1o-alvarez-2066aa267/"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <main>
+      <h1>Home</h1>
+
+      <section class="course-work">
+        <h2>Course Work</h2>
+        <ul>
+          <li>Learning Activity 1: HTML and CSS Basics</li>
+          <li>Learning Activity 2: JavaScript Fundamentals</li>
+          <li>Learning Activity 3: DOM Manipulation</li>
+        </ul>
+      </section>
+
+      <section class="location">
+        <h2>São Paulo, Brazil</h2>
+        <figure>
+          <img
+            src="images/cidade-de-sao-paulo.jpg"
+            alt="Cidade de São Paulo"
+            width="400"
+            height="300"
+          />
+          <figcaption>City of São Paulo</figcaption>
+        </figure>
+      </section>
+
+      <section class="certificate">
+        <h2>Web and Computer Programming Certificate</h2>
+
+        <div class="filter-buttons">
+          <button id="all-btn" class="active">All</button>
+          <button id="cse-btn">CSE</button>
+          <button id="wdd-btn">WDD</button>
+        </div>
+
+        <div id="courses-container" class="courses-container"></div>
+
+        <div class="credit-summary">
+          <p>Total Credits: <span id="total-credits">0</span></p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        &copy; <span id="current-year"></span> 😎 Anibal David Carreño Alvarez
+        😎 São Paulo, Brazil
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
 </html>
