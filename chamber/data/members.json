@@ -1,0 +1,84 @@
+{
+  "members": [
+    {
+      "name": "Desert Oasis Hotel",
+      "address": "123 Sahara Avenue, Ecowanderer",
+      "phone": "223-555-1234",
+      "website": "https://www.desertoasishotel.com",
+      "email": "info@desertoasishotel.com",
+      "image": "images/desert-oasis.png",
+      "tagline": "Luxury accommodations in the heart of Ecowanderer",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Sahara Trading Co.",
+      "address": "456 Market Street, Ecowanderer",
+      "phone": "223-555-2345",
+      "website": "https://www.saharatrading.com",
+      "email": "contact@saharatrading.com",
+      "image": "images/sahara-trading.png",
+      "tagline": "Connecting Africa with the world since 1850",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Ecowanderer Tours",
+      "address": "789 Explorer Road, Ecowanderer",
+      "phone": "223-555-3456",
+      "website": "https://www.Ecowanderertours.com",
+      "email": "adventures@Ecowanderertours.com",
+      "image": "images/ecowanderer-tours.png",
+      "tagline": "Discover the mysteries of ancient Mali",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Sankore University",
+      "address": "321 Scholar Lane, Ecowanderer",
+      "phone": "223-555-4567",
+      "website": "https://www.sankoreuniversity.edu",
+      "email": "admissions@sankoreuniversity.edu",
+      "image": "images/sankore-university.png",
+      "tagline": "Excellence in education since the 15th century",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Mali Artisan Crafts",
+      "address": "654 Artisan Alley, Ecowanderer",
+      "phone": "223-555-5678",
+      "website": "https://www.maliartisancrafts.com",
+      "email": "sales@maliartisancrafts.com",
+      "image": "images/mali-artisan.png",
+      "tagline": "Authentic handcrafted treasures from Mali",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Ecowanderer Tech Solutions",
+      "address": "987 Innovation Drive, Ecowanderer",
+      "phone": "223-555-6789",
+      "website": "https://www.Ecowanderertech.com",
+      "email": "support@Ecowanderertech.com",
+      "image": "images/ecowanderer-tech.png",
+      "tagline": "Bringing modern solutions to ancient traditions",
+      "membershipLevel": 2
+    },
+    {
+      "name": "Sahel Agricultural Cooperative",
+      "address": "159 Harvest Road, Ecowanderer",
+      "phone": "223-555-7890",
+      "website": "https://www.sahelagcoop.org",
+      "email": "info@sahelagcoop.org",
+      "image": "images/sahel-ag.png",
+      "tagline": "Sustainable farming in the Sahel region",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Ecowanderer Medical Center",
+      "address": "753 Healing Way, Ecowanderer",
+      "phone": "223-555-8901",
+      "website": "https://www.Ecowanderermedical.org",
+      "email": "care@Ecowanderermedical.org",
+      "image": "images/ecowanderer.png",
+      "tagline": "Compassionate healthcare for all",
+      "membershipLevel": 3
+    }
+  ]
+}

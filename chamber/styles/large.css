@@ -1,0 +1,40 @@
+@media only screen and (min-width: 64em) {
+    .header-content {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    #primary-nav li {
+        margin: 0 0.5rem;
+    }
+
+    #primary-nav a {
+        padding: 0.5rem 1rem;
+    }
+
+    #directory-container.grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer {
+        padding: 2rem;
+    }
+
+    .footer-top {
+        max-width: 1200px;
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .footer-social,
+    .footer-bottom {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (min-width: 80em) {
+    #directory-container.grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
