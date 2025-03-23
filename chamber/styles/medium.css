@@ -39,6 +39,28 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .home-main {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .hero {
+        grid-column: 1 / -1;
+    }
+
+    .hero-image {
+        height: 400px;
+    }
+
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+
+    /* Spotlights in two columns */
+    .spotlights-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
     .footer-top {
         flex-direction: row;
         justify-content: space-between;

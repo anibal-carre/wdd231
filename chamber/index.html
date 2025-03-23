@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD231 Chamber Directory Page" />
+    <meta name="author" content="Anibal David Carreño Alvarez" />
+    <meta
+      property="og:title"
+      content="Ecowanderer Chamber of Commerce Directory"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://anibal-carre.github.io/chamber/images/profile.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://anibal-carre.github.io/wdd231/directory.html"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/directory.js"></script>
+    <script defer src="scripts/main.js"></script>
+    <script defer src="scripts/weather.js"></script>
+    <script defer src="scripts/spotlight.js"></script>
+
+    <title>WDD231 Chamber Directory Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo">
+          <img
+            src="images/logo.webp"
+            alt="Ecowanderer Chamber of Commerce Logo"
+          />
+          <div class="title">
+            <h1>Ecowanderer</h1>
+            <p>Chamber of Commerce</p>
+          </div>
+        </div>
+        <div class="nav-container">
+          <nav>
+            <button id="hamburger-btn">
+              <span>&#9776;</span>
+              <span>X</span>
+            </button>
+            <ul id="primary-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="discover.html">Discover</a></li>
+              <li class="active"><a href="directory.html">Directory</a></li>
+              <li><a href="join.html">Join</a></li>
+            </ul>
+          </nav>
+          <div class="theme-toggle">
+            <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+              <i class="fas fa-moon"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="date-banner">
+        <p id="current-date"></p>
+      </div>
+    </header>
+
+    <main class="home-main">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Welcome to Ecowanderer</h2>
+          <p>Supporting sustainable businesses and community growth</p>
+          <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+        <img
+          src="images/desert-oasis.png"
+          alt="Local business district"
+          class="hero-image"
+        />
+      </section>
+
+      <!-- Event Section -->
+      <section class="event-section">
+        <h2>Upcoming Events</h2>
+        <div class="event-card">
+          <h3>Business Networking Breakfast</h3>
+          <p class="event-date">May 15, 2025 • 8:00 AM</p>
+          <p>
+            Join us for our monthly networking breakfast at the Grand Hotel.
+            Connect with local business owners and entrepreneurs.
+          </p>
+          <a href="#" class="event-link">Learn More</a>
+        </div>
+        <div class="event-card">
+          <h3>Small Business Workshop</h3>
+          <p class="event-date">May 22, 2025 • 2:00 PM</p>
+          <p>
+            Free workshop on digital marketing strategies for small businesses.
+            Limited seats available.
+          </p>
+          <a href="#" class="event-link">Register Now</a>
+        </div>
+      </section>
+
+      <!-- Weather Section -->
+      <section class="weather-section">
+        <h2>Local Weather</h2>
+        <div class="current-weather">
+          <img id="weather-icon" src="/placeholder.svg" alt="Weather icon" />
+          <div class="temp-container">
+            <span id="current-temp"></span>
+            <span class="temp-unit">°F</span>
+          </div>
+          <p id="weather-desc"></p>
+        </div>
+        <div class="forecast">
+          <h3>3-Day Forecast</h3>
+          <div class="forecast-container" id="forecast-container">
+            <!-- Forecast data will be inserted here by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Spotlight Section -->
+      <section class="spotlight-section">
+        <h2>Business Spotlights</h2>
+        <div class="spotlights-container" id="spotlights-container">
+          <!-- Spotlight cards will be inserted here by JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-top">
+        <div class="footer-logo">
+          <img
+            src="images/logo.webp"
+            alt="Ecowanderer Chamber of Commerce Logo"
+          />
+          <div class="footer-title">
+            <h2>Ecowanderer Chamber of Commerce</h2>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p>info@ecowanderer.org</p>
+          <p>(11) 99555-2300</p>
+          <p>
+            <a href="https://maps.google.com" target="_blank"
+              >📍 Location Map</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; <span id="current-year"></span> Ecowanderer Chamber of Commerce
+          | <span>Anibal David Carreño Alvarez</span> | WDD 231
+        </p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+      </div>
+    </footer>
+  </body>
+</html>
