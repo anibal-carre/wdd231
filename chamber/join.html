@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Join the Ecowanderer Chamber of Commerce - Apply for membership and connect with local businesses"
+    />
+    <meta name="author" content="Anibal David Carreño Alvarez" />
+    <title>Join | Ecowanderer Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-container">
+          <img
+            src="images/logo.webp"
+            alt="Ecowanderer Chamber of Commerce Logo"
+            class="logo"
+          />
+          <div class="title-container">
+            <h1>Ecowanderer</h1>
+            <p>Chamber of Commerce</p>
+          </div>
+        </div>
+
+        <button id="hamburger-btn">
+          <span>&#9776;</span>
+          <span>X</span>
+        </button>
+      </div>
+      <nav>
+        <ul id="primary-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li class="active"><a href="join.html">Join</a></li>
+          <li><a href="#" id="dark-mode-toggle">🌙</a></li>
+        </ul>
+      </nav>
+      <div class="date-container">
+        <p id="current-date"></p>
+      </div>
+    </header>
+
+    <main class="join-main">
+      <h1>Join the Ecowanderer Chamber of Commerce</h1>
+      <p class="join-intro">
+        Become a member of our chamber and connect with local businesses, access
+        exclusive resources, and grow your network in the Ecowanderer community.
+      </p>
+
+      <div class="join-container">
+        <section class="form-section">
+          <h2>Membership Application</h2>
+          <form method="get" action="thankyou.html" id="join-form">
+            <fieldset>
+              <legend>Applicant Information</legend>
+
+              <label for="first-name"
+                >First Name*
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  autocomplete="given-name"
+                  title="Please enter your first name"
+                />
+              </label>
+
+              <label for="last-name"
+                >Last Name*
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  required
+                  autocomplete="family-name"
+                  title="Please enter your last name"
+                />
+              </label>
+
+              <label for="title"
+                >Business Position/Title
+                <input
+                  type="text"
+                  id="title"
+                  name="title"
+                  pattern="[A-Za-z\s\-]{7,}"
+                  autocomplete="organization-title"
+                  title="Please enter your position (minimum 7 characters, only letters, hyphens, and spaces)"
+                />
+              </label>
+
+              <label for="email"
+                >Email Address*
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="example@domain.com"
+                  title="Please enter a valid email address"
+                />
+              </label>
+
+              <label for="phone"
+                >Mobile Phone Number*
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  autocomplete="tel"
+                  title="Please enter your mobile phone number"
+                />
+              </label>
+
+              <label for="business-name"
+                >Business/Organization Name*
+                <input
+                  type="text"
+                  id="business-name"
+                  name="business-name"
+                  required
+                  autocomplete="organization"
+                  title="Please enter your business or organization name"
+                />
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Membership Level</legend>
+
+              <label class="radio-label">
+                <input type="radio" name="membership" value="np" required />
+                <span>NP Membership (Non-profit, no fee)</span>
+              </label>
+
+              <label class="radio-label">
+                <input type="radio" name="membership" value="bronze" required />
+                <span>Bronze Membership</span>
+              </label>
+
+              <label class="radio-label">
+                <input type="radio" name="membership" value="silver" required />
+                <span>Silver Membership</span>
+              </label>
+
+              <label class="radio-label">
+                <input type="radio" name="membership" value="gold" required />
+                <span>Gold Membership</span>
+              </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Business Description</legend>
+
+              <label for="description"
+                >Tell us about your business/organization
+                <textarea
+                  id="description"
+                  name="description"
+                  rows="5"
+                  title="Please provide a brief description of your business or organization"
+                ></textarea>
+              </label>
+            </fieldset>
+
+            <input type="hidden" id="timestamp" name="timestamp" />
+
+            <input
+              type="submit"
+              value="Submit Application"
+              class="submit-btn"
+            />
+          </form>
+        </section>
+
+        <section class="membership-section">
+          <h2>Membership Levels</h2>
+          <div class="membership-cards">
+            <div class="membership-card np-card">
+              <h3>NP Membership</h3>
+              <p>For non-profit organizations</p>
+              <p class="price">Free</p>
+              <a href="#" class="benefits-link" data-modal="np-modal"
+                >View Benefits</a
+              >
+            </div>
+
+            <div class="membership-card bronze-card">
+              <h3>Bronze Membership</h3>
+              <p>For small businesses</p>
+              <p class="price">$50/year</p>
+              <a href="#" class="benefits-link" data-modal="bronze-modal"
+                >View Benefits</a
+              >
+            </div>
+
+            <div class="membership-card silver-card">
+              <h3>Silver Membership</h3>
+              <p>For growing businesses</p>
+              <p class="price">$100/year</p>
+              <a href="#" class="benefits-link" data-modal="silver-modal"
+                >View Benefits</a
+              >
+            </div>
+
+            <div class="membership-card gold-card">
+              <h3>Gold Membership</h3>
+              <p>For established businesses</p>
+              <p class="price">$250/year</p>
+              <a href="#" class="benefits-link" data-modal="gold-modal"
+                >View Benefits</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="np-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>NP Membership Benefits</h2>
+          <ul>
+            <li>Basic listing in the online directory</li>
+            <li>Access to chamber networking events</li>
+            <li>Monthly newsletter subscription</li>
+            <li>Opportunity to participate in community service projects</li>
+          </ul>
+          <p class="modal-note">
+            This membership level is free for registered non-profit
+            organizations.
+          </p>
+        </div>
+      </div>
+
+      <div id="bronze-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Bronze Membership Benefits</h2>
+          <ul>
+            <li>Enhanced listing in the online directory</li>
+            <li>Access to chamber networking events</li>
+            <li>Monthly newsletter subscription</li>
+            <li>Social media mention (once per year)</li>
+            <li>10% discount on event registration fees</li>
+          </ul>
+          <p class="modal-note">Bronze membership is $50 per year.</p>
+        </div>
+      </div>
+
+      <div id="silver-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Silver Membership Benefits</h2>
+          <ul>
+            <li>Premium listing in the online directory</li>
+            <li>Access to chamber networking events</li>
+            <li>Monthly newsletter subscription</li>
+            <li>Social media mentions (quarterly)</li>
+            <li>25% discount on event registration fees</li>
+            <li>Opportunity to be featured in the business spotlight</li>
+            <li>Access to business development workshops</li>
+          </ul>
+          <p class="modal-note">Silver membership is $100 per year.</p>
+        </div>
+      </div>
+
+      <div id="gold-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-modal">&times;</span>
+          <h2>Gold Membership Benefits</h2>
+          <ul>
+            <li>Featured listing in the online directory</li>
+            <li>Access to chamber networking events</li>
+            <li>Monthly newsletter subscription</li>
+            <li>Social media mentions (monthly)</li>
+            <li>50% discount on event registration fees</li>
+            <li>Priority placement in the business spotlight</li>
+            <li>Access to business development workshops</li>
+            <li>Dedicated booth at annual business expo</li>
+            <li>Company logo on chamber website homepage</li>
+            <li>Opportunity to host a chamber networking event</li>
+          </ul>
+          <p class="modal-note">Gold membership is $250 per year.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="images/logo.webp"
+            alt="Ecowanderer Chamber of Commerce Logo"
+            class="logo"
+          />
+          <div class="footer-title">
+            <h3>Ecowanderer Chamber of Commerce</h3>
+            <p>123 Sahara Avenue<br />Ecowanderer, Mali</p>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p>info@ecowanderer.org</p>
+          <p>(223) 555-1234</p>
+          <p>
+            <a href="https://maps.google.com" target="_blank"
+              >📍 Location Map</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>
+          &copy; <span id="current-year"></span> Ecowanderer Chamber of Commerce
+          | Your Name | WDD 230 Project
+        </p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
+</html>

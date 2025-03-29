@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Thank you for applying to join the Ecowanderer Chamber of Commerce"
+    />
+    <meta name="author" content="Anibal David Carreño Alvarez" />
+    <title>Thank You | Ecowanderer Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/medium.css" />
+    <link rel="stylesheet" href="styles/large.css" />
+    <link rel="stylesheet" href="styles/join.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div class="logo-container">
+          <img
+            src="images/logo.webp"
+            alt="Ecowanderer Chamber of Commerce Logo"
+            class="logo"
+          />
+          <div class="title-container">
+            <h1>Ecowanderer</h1>
+            <p>Chamber of Commerce</p>
+          </div>
+        </div>
+
+        <button id="hamburger-btn">
+          <span>&#9776;</span>
+          <span>X</span>
+        </button>
+      </div>
+      <nav>
+        <ul id="primary-nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li class="active"><a href="join.html">Join</a></li>
+          <li><a href="#" id="dark-mode-toggle">🌙</a></li>
+        </ul>
+      </nav>
+      <div class="date-container">
+        <p id="current-date"></p>
+      </div>
+    </header>
+
+    <main class="thankyou-main">
+      <div class="thankyou-container">
+        <h1>Thank You for Your Application!</h1>
+        <p>
+          We have received your membership application to the Ecowanderer
+          Chamber of Commerce. Our team will review your information and contact
+          you shortly.
+        </p>
+
+        <div class="submission-details">
+          <h2>Your Submission Details</h2>
+          <div id="submission-data"></div>
+        </div>
+
+        <div class="next-steps">
+          <h2>Next Steps</h2>
+          <ol>
+            <li>
+              Our membership team will review your application within 2-3
+              business days.
+            </li>
+            <li>
+              You will receive a confirmation email with payment instructions
+              (if applicable).
+            </li>
+            <li>
+              Once your membership is activated, you will receive access to all
+              member benefits.
+            </li>
+          </ol>
+        </div>
+
+        <a href="index.html" class="return-btn">Return to Homepage</a>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img
+            src="images/logo.webp"
+            alt="Ecowanderer Chamber of Commerce Logo"
+            class="logo"
+          />
+          <div class="footer-title">
+            <h3>Ecowanderer Chamber of Commerce</h3>
+            <p>123 Sahara Avenue<br />Ecowanderer, Mali</p>
+          </div>
+        </div>
+        <div class="footer-contact">
+          <p>info@ecowanderer.org</p>
+          <p>(223) 555-1234</p>
+          <p>
+            <a href="https://maps.google.com" target="_blank"
+              >📍 Location Map</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-base">
+        <p>
+          &copy; <span id="current-year"></span> Ecowanderer Chamber of Commerce
+          | Your Name | WDD 230 Project
+        </p>
+        <p id="last-modified"></p>
+      </div>
+    </footer>
+  </body>
+</html>
