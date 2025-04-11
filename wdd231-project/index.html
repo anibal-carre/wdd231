@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Nexus | Anibal David Carreño Alvarez</title>
+    <meta name="description" content="WDD231 Portfolio Nexus" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image/svg+xml" href="./images/dev-icon.png" />
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <script defer src="scripts/projects.js"></script>
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="#" class="logo">Anibal David Carreño Alvarez</a>
+        <nav class="main-nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#resume" class="nav-link">Resume</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <a href="#contact" class="btn btn-outline">
+          <i data-feather="mail" class="icon-sm"></i> Get in Touch
+        </a>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="heading-xl">
+            Crafting <span class="text-accent">Digital Experiences</span> That
+            Leave an Impression
+          </h1>
+          <p class="text-lg hero-text">
+            Welcome to my professional portfolio. I'm a passionate creator
+            dedicated to building beautiful, functional, and user-centered
+            digital solutions.
+          </p>
+          <div class="button-group">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="./resume.pdf" download class="btn btn-outline">
+              <i data-feather="download" class="icon-sm"></i> Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg-gradient"></div>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-container">
+            <div class="about-image">
+              <img src="./images/profile.png" alt="Portrait" />
+            </div>
+            <div class="about-image-accent"></div>
+          </div>
+          <div class="about-content">
+            <h2 class="heading-lg">
+              About <span class="text-accent">Me</span>
+            </h2>
+            <p class="about-text">
+              I'm David, a web developer in search of my first professional
+              experience. I'm always looking for new challenges and staying
+              up-to-date with industry trends. I have a passion for programming
+              and a proactive attitude towards learning.
+            </p>
+            <p class="about-text">
+              I specialize in both front-end and back-end development, crafting
+              responsive web applications that deliver seamless performance
+              across all devices.
+            </p>
+            <div class="skills-grid">
+              <div class="skills-column">
+                <h3 class="text-accent heading-sm">Skills</h3>
+                <ul class="skills-list">
+                  <li><span class="skill-dot"></span>Front-end Development</li>
+                  <li>
+                    <span class="skill-dot"></span>JavaScript, React & Next.js
+                  </li>
+                  <li><span class="skill-dot"></span>Responsive Design</li>
+                </ul>
+              </div>
+              <div class="skills-column">
+                <h3 class="text-accent heading-sm">Tools</h3>
+                <ul class="skills-list">
+                  <li><span class="skill-dot"></span>Figma</li>
+                  <li><span class="skill-dot"></span>VS Code</li>
+                  <li><span class="skill-dot"></span>Git & GitHub</li>
+                  <li><span class="skill-dot"></span>CSS Frameworks</li>
+                </ul>
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="https://github.com/anibal-carre"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <i data-feather="github"></i>
+                <span class="sr-only">GitHub</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/anibal-david-carre%C3%B1o-alvarez-2066aa267/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+              >
+                <i data-feather="linkedin"></i>
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="heading-lg">
+            Featured <span class="text-accent">Projects</span>
+          </h2>
+          <p class="section-description">
+            Explore my latest work. Each project represents a unique challenge
+            and solution, showcasing my skills and approach to design and
+            development.
+          </p>
+        </div>
+
+        <div class="project-filters">
+          <button class="btn btn-filter active" data-category="all">
+            All Projects
+          </button>
+          <button class="btn btn-filter" data-category="web">
+            Web Development
+          </button>
+          <button class="btn btn-filter" data-category="mobile">
+            Mobile Apps
+          </button>
+          <button class="btn btn-filter" data-category="design">
+            UI/UX Design
+          </button>
+        </div>
+
+        <div class="projects-grid"></div>
+      </div>
+    </section>
+
+    <section id="resume" class="resume-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="heading-lg">
+            Experience & <span class="text-accent">Education</span>
+          </h2>
+          <p class="section-description">
+            My professional journey and academic background that have shaped my
+            skills and expertise.
+          </p>
+          <div class="resume-btn-container">
+            <button class="btn btn-primary">
+              <i data-feather="download" class="icon-sm"></i> Download Full
+              Resume
+            </button>
+          </div>
+        </div>
+
+        <div class="resume-grid">
+          <div class="experience-column">
+            <h3 class="heading-md text-accent">Work Experience</h3>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <h4 class="timeline-title">Senior Frontend Developer</h4>
+                <div class="timeline-period">
+                  TechCorp Inc. • 2021 - Present
+                </div>
+                <p class="timeline-description">
+                  Led the development of responsive web applications using React
+                  and JavaScript. Collaborated with designers to implement
+                  pixel-perfect UI components and improved site performance by
+                  40%.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <h4 class="timeline-title">UI/UX Designer</h4>
+                <div class="timeline-period">DesignStudio • 2018 - 2021</div>
+                <p class="timeline-description">
+                  Created user-centered designs for web and mobile applications.
+                  Conducted user research and testing to optimize interfaces and
+                  user flows. Designed and maintained design systems.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <h4 class="timeline-title">Web Developer</h4>
+                <div class="timeline-period">CreativeAgency • 2016 - 2018</div>
+                <p class="timeline-description">
+                  Developed responsive websites for clients across various
+                  industries. Implemented modern CSS techniques and JavaScript
+                  frameworks to create interactive user experiences.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="education-column">
+            <h3 class="heading-md text-accent">Education & Certifications</h3>
+
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <h4 class="timeline-title">Master of Computer Science</h4>
+                <div class="timeline-period">Tech University • 2014 - 2016</div>
+                <p class="timeline-description">
+                  Specialized in Human-Computer Interaction and User Experience
+                  Design. Graduated with honors.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <h4 class="timeline-title">Bachelor of Design</h4>
+                <div class="timeline-period">
+                  Design Institute • 2010 - 2014
+                </div>
+                <p class="timeline-description">
+                  Studied Graphic Design and Digital Media. Received award for
+                  outstanding final project.
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-marker"></div>
+                <h4 class="timeline-title">Certifications</h4>
+                <div class="timeline-period">Professional Development</div>
+                <ul class="certification-list">
+                  <li>
+                    <span class="cert-dot"></span>Advanced UX Design (Nielsen
+                    Norman Group)
+                  </li>
+                  <li>
+                    <span class="cert-dot"></span>Frontend Web Developer (Meta)
+                  </li>
+                  <li>
+                    <span class="cert-dot"></span>Responsive Web Design
+                    (freeCodeCamp)
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2 class="heading-lg">
+              Let's <span class="text-accent">Connect</span>
+            </h2>
+            <p class="contact-description">
+              Interested in working together or have a question? Feel free to
+              reach out. I'm always open to discussing new projects, creative
+              ideas, or opportunities to be part of your vision.
+            </p>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i data-feather="mail"></i>
+                </div>
+                <div class="contact-details">
+                  <h3 class="contact-method-title">Email</h3>
+                  <p class="contact-method-value">
+                    anibaldavidcarrenoalvarez@gmail.com
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i data-feather="github"></i>
+                </div>
+                <div class="contact-details">
+                  <h3 class="contact-method-title">GitHub</h3>
+                  <p class="contact-method-value">github.com/anibal-carre</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i data-feather="linkedin"></i>
+                </div>
+                <div class="contact-details">
+                  <h3 class="contact-method-title">LinkedIn</h3>
+                  <p class="contact-method-value">
+                    https://www.linkedin.com/in/anibal-david-carre%C3%B1o-alvarez-2066aa267/
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-container">
+            <div class="form-card">
+              <h3 class="heading-md">Send a Message</h3>
+              <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Name</label>
+                    <input
+                      type="text"
+                      id="name"
+                      placeholder="Your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                      type="email"
+                      id="email"
+                      placeholder="Your email address"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    placeholder="What is this regarding?"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    placeholder="Your message..."
+                    rows="5"
+                    required
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-block"
+                  id="submitBtn"
+                >
+                  <i data-feather="send" class="icon-sm"></i> Send Message
+                </button>
+              </form>
+
+              <div id="formSuccess" class="form-success hidden">
+                <div class="success-icon">
+                  <i data-feather="send"></i>
+                </div>
+                <h3 class="heading-md">Message Sent!</h3>
+                <p class="success-message">
+                  Thank you for reaching out. I'll get back to you as soon as
+                  possible.
+                </p>
+                <button class="btn btn-outline" id="sendAnotherBtn">
+                  Send Another Message
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#" class="logo">Anibal David Carreño Alvarez</a>
+            <p class="copyright">
+              © <span id="currentYear"></span> All Rights Reserved
+            </p>
+          </div>
+
+          <nav class="footer-nav">
+            <a href="#about" class="footer-link">About</a>
+            <a href="#projects" class="footer-link">Projects</a>
+            <a href="#resume" class="footer-link">Resume</a>
+            <a href="#contact" class="footer-link">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

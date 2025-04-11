@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "title": "Uber Landing Page Clone",
+    "description": "Uber Landing Page Clone is a sleek and responsive replica of Uber’s homepage, designed using React, Vite, Tailwind CSS, and Framer Motion. It features smooth animations and a clean layout that mirrors the modern aesthetic and UX of the original site.",
+    "image": "./images/uber.png",
+    "category": "web",
+    "technologies": ["React", "Vite", "Tailwind CSS", "Framer Motion"],
+    "demoUrl": "https://uber-website-clon.vercel.app/",
+    "githubUrl": "https://github.com/anibal-carre/uber-website-clon"
+  },
+  {
+    "id": 2,
+    "title": "Iphone Page 3D",
+    "description": "Iphone Page 3D is a visually engaging 3D landing page inspired by Apple’s design, built with React, Three.js, and GSAP. It features smooth animations and interactive elements that showcase an iPhone model in a dynamic and modern way.",
+    "image": "./images/apple-landing.png",
+    "category": "web",
+    "technologies": ["React", "Three.js", "Javascript", "GSAP"],
+    "demoUrl": "https://apple-iphone-3d-website-by-david.netlify.app/",
+    "githubUrl": "https://github.com/anibal-carre/apple-iphone-3d-website"
+  },
+  {
+    "id": 3,
+    "title": "Dog Woah",
+    "description": "Dog Woah is a fun and user-friendly web app designed for discovering and exploring dog breeds. Built with React, Vite, and Firebase, it delivers a clean interface, responsive design, and real-time data features to enhance user interaction.",
+    "image": "./images/dogwoah.png",
+    "category": "design",
+    "technologies": ["React", "Firebase", "Vite"],
+    "demoUrl": "https://final-project-toti-front.vercel.app/",
+    "githubUrl": "https://github.com/anibal-carre/final-project-toti-front"
+  },
+  {
+    "id": 4,
+    "title": "Spotify Interface",
+    "description": "Spotify Interface is a sleek clone of the Spotify web player, built with Next.js, React, and Tailwind CSS. It replicates the modern UI and layout of Spotify, showcasing responsive design and smooth user experience.",
+    "image": "./images/spotify.png",
+    "category": "web",
+    "technologies": ["Next.js", "Tailwind CSS", "React"],
+    "demoUrl": "https://spotify-interface-tailwind-152kofalc-anibal-carre.vercel.app/",
+    "githubUrl": "https://github.com/anibal-carre/spotify-interface-tailwind"
+  },
+  {
+    "id": 5,
+    "title": "Portfolio Website Template",
+    "description": "A customizable portfolio template for creative professionals with modern design and smooth animations.",
+    "image": "./images/weather-app.png",
+    "category": "web",
+    "technologies": ["Next.js", "Tailwind CSS", "JavaScript", "API"],
+    "demoUrl": "https://weather-app-with-next-js.vercel.app/",
+    "githubUrl": "https://github.com/anibal-carre/weather-app-with-next.js"
+  },
+  {
+    "id": 6,
+    "title": "Health & Fitness App",
+    "description": "A mobile application for tracking fitness goals, nutrition, and workout routines with personalized recommendations.",
+    "image": "./images/windbnb.png",
+    "category": "web",
+    "technologies": ["React", "Vite", "Tailwind CSS", "JSON"],
+    "demoUrl": "https://anibal-carre.github.io/Mini-Project-Funval-2/",
+    "githubUrl": "https://github.com/anibal-carre/Mini-Project-Funval-2"
+  }
+]
